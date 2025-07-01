@@ -56,12 +56,12 @@ html {
     overflow: hidden;
 }
 
-.codeflix-title {
+.aonoko-title {
     width: 211px;
     height: 33px;
 }
 
-.codeflix-sign-in {
+.aonoko-sign-in {
     color: #fff;
     font-weight: 600;
     font-size: 42px;
@@ -193,7 +193,7 @@ html {
         display: none;
     }
 
-    .codeflix-sign-in {
+    .aonoko-sign-in {
         font-size: 30px;
     }
 
