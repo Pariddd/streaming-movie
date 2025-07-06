@@ -58,4 +58,9 @@ class User extends Authenticatable
             ->where('end_date', '>', now())
             ->exists();
     }
+
+    public function devices(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(UserDevice::class);
+    }
 }
