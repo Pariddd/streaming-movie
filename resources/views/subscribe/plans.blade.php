@@ -24,7 +24,7 @@
                             <p class="mb-0 text-green">Mobile, Computer, TV</p>
                         </div>
                         <div class="mb-4">
-                            <h6 class="text-white">Device your household can watch at the same time</h6>
+                            <h6 class="text-white">Max Device</h6>
                             <p class="mb-0 text-green">{{ $plan->max_devices }} Device</p>
                         </div>
                         <div class="mt-auto">
