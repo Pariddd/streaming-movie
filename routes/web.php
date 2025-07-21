@@ -23,3 +23,10 @@ Route::post('/logout', function (Request $request) {
     // Laravel Fortify menangani logout, kita hanya tambahkan middleware
     return app(\Laravel\Fortify\Http\Controllers\AuthenticatedSessionController::class)->destroy($request);
 })->middleware(['auth', 'logout.device'])->name('logout');
+
+Route::get('/text-expired', function () {
+    $membership = \App\Models\Membership::find(1);
+    event(new \App\Events\MembershipHasExpired($membership));
+
+    return 'Event fired';
+});
