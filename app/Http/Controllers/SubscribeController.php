@@ -26,7 +26,7 @@ class SubscribeController extends Controller implements HasMiddleware
     public function checkoutPlan(Plan $plan)
     {
         $user = Auth::user();
-        return view('subscribe.checkout', compact('     ', 'user'));
+        return view('subscribe.checkout', compact('plan', 'user'));
     }
 
     public function processCheckout(Request $request)
